@@ -30,6 +30,15 @@ public class basics{
         for (int num : arr1) {
             System.out.print(num+" ");
         }
+        int i=0;
+        int j=arr1.length-1;
+        //reversing the array
+        while (i<j) {
+            Swap.swap(arr1, i, j);
+            i++;
+            j--;
+        }
+        System.out.println("\nArray after reversing: "+Arrays.toString(arr1));
 
         br.close();
 
