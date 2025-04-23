@@ -20,7 +20,6 @@ public class ElementInfiniteArray {
                 
             } catch (Exception ex) {
                     e=e-(e-s+1)/2;
-                    // s/=2;
                     if (s>=e) {
                         break;
                     }

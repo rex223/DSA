@@ -40,7 +40,7 @@ public class elementSearchMountain {
         return ans1!=-1&&ans2!=-1?ans:ans1!=-1?new int[]{ans1}:ans2!=-1?new int[]{ans2}:ans;
     }
     public static void main(String[] args) throws IOException {
-        int[] arr={1,2,3,4,5,4,3,2,1};
+        int[] arr={1,2,3,4,5,6,4,3,2,1};
         BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Enter the element u wanna search: ");
         int target=Integer.parseInt(br.readLine());

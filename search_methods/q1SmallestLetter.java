@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+// Find smallest letter greater than the target in a sorted array of characters
+
 public class q1SmallestLetter {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -22,9 +24,8 @@ public class q1SmallestLetter {
             c++;
         }
         System.out.print("Enter the target u want to search in the array: ");
-        char target=br.readLine().charAt(0);
-        System.out.println(findSmallestLetter(arr,target));
-
+        char target = br.readLine().charAt(0);
+        System.out.println(findSmallestLetter(arr, target));
 
     }
 
