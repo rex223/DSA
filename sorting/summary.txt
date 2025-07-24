@@ -1,0 +1,65 @@
+Algorithm	    After Each Pass/Partition	                      Guaranteed Positions
+
+Bubble	        Largest unsorted element moves to end.	          Last *i* elements sorted.
+Selection	    Smallest unsorted element moves to front.	      First *i* elements sorted.
+Insertion	    Next element inserted into sorted left portion.	  First *i+1* elements partial.
+Quick	        Pivot in final position; others partitioned.	  Only pivot sorted.
+Merge	        Subarrays merged into larger sorted chunks.	      Nothing until final merge.
+
+
+
+
+1. Bubble Sort
+Recurrence Relation:
+T(n) = T(n-1) + O(n)
+Time Complexity:
+
+Worst Case: O(n²)
+
+Average Case: O(n²)
+
+Best Case: O(n) (when already sorted)
+
+2. Selection Sort
+Recurrence Relation:
+T(n) = T(n-1) + O(n)
+Time Complexity:
+
+All Cases: O(n²)
+
+3. Insertion Sort
+Recurrence Relation:
+T(n) = T(n-1) + O(n)
+Time Complexity:
+
+Worst Case: O(n²)
+
+Average Case: O(n²)
+
+Best Case: O(n) (when already sorted)
+
+4. Quick Sort
+Recurrence Relation:
+T(n) = T(k) + T(n-k-1) + O(n)
+where k = elements smaller than pivot
+Time Complexity:
+
+Best Case: O(n log n) (balanced partitions)
+
+Average Case: O(n log n)
+
+Worst Case: O(n²) (unbalanced partitions)
+
+5. Merge Sort
+Recurrence Relation:
+T(n) = 2T(n/2) + O(n)
+Time Complexity:
+
+All Cases: O(n log n)
+
+6. Heap Sort
+Recurrence Relation:
+T(n) = O(n) + T(n-1) + O(log n)
+Time Complexity:
+
+All Cases: O(n log n)
