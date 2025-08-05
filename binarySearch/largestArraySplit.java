@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+// Given an array of positive integers and an integer k, split the array into k contiguous subarrays such that the largest sum among these subarrays is as small as possible."
+
 public class largestArraySplit {
     
     static int[] splitArray(int[] arr){
