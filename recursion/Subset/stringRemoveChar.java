@@ -13,7 +13,9 @@ public class stringRemoveChar {
         char ch = br.readLine().charAt(0);
         System.out.printf("The character %s is removed from %s\n", ch, str);
         String ans = removeChar(str, ch, 0);
+        String ans2 = removeChar2(str, ch);
         System.out.println(ans);
+        System.out.println(ans2);
 
         br.close();
     }
@@ -25,5 +27,15 @@ public class stringRemoveChar {
             return removeChar(str, ch, index + 1);
         else
             return str.charAt(index) + removeChar(str, ch, index + 1);
+    }
+
+    static String removeChar2(String str, char ch) {
+        if (str.length() == 0)
+            return "";
+        if (str.charAt(0) == ch)
+            return removeChar2(str.substring(1), ch);
+        else
+            return str.charAt(0) + removeChar2(str.substring(1), ch);
+
     }
 }
