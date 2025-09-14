@@ -22,7 +22,6 @@ public class subSequence {
         char ch = s.charAt(0);
         sequence(s.substring(1), str);
         sequence(s.substring(1), str + ch);
-        return;
     }
 
     static ArrayList<String> Asequence(String s, String str) {
@@ -43,8 +42,6 @@ public class subSequence {
             return;
         String accumulator = "";
         helperSequence2(s, accumulator);
-
-        return;
     }
 
     private static void helperSequence2(String s, String accumulator) {
@@ -54,7 +51,6 @@ public class subSequence {
         }
         helperSequence2(s.substring(1), accumulator);
         helperSequence2(s.substring(1), accumulator + s.charAt(0));
-        return;
     }
 
     private static ArrayList<String> Asequence2(String s) {
